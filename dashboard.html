@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Moment4</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-brand">
+          <h1>Moment4 Auth</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" id="home-link">Hem</a>
+          <a href="login.html" id="login-link">Logga in</a>
+          <a href="register.html" id="register-link">Registrera</a>
+          <a href="dashboard.html" id="dashboard-link" style="display: none"
+            >Dashboard</a
+          >
+          <button id="logout-btn" style="display: none">Logga ut</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="dashboard">
+          <h2>Välkommen till Dashboard</h2>
+          <p>Detta är en skyddad sida som kräver inloggning.</p>
+
+          <div class="user-info">
+            <h3>Användarinformation</h3>
+            <div id="user-details">
+              <p><strong>Användarnamn:</strong> <span id="username"></span></p>
+              <p><strong>E-post:</strong> <span id="email"></span></p>
+              <p><strong>Användar-ID:</strong> <span id="user-id"></span></p>
+            </div>
+          </div>
+
+          <div class="protected-data">
+            <h3>Skyddad data från API</h3>
+            <button id="load-data-btn" class="btn btn-secondary">
+              Ladda skyddad data
+            </button>
+            <div id="protected-content" class="data-display"></div>
+          </div>
+
+          <div class="profile-section">
+            <h3>Användarprofil</h3>
+            <button id="load-profile-btn" class="btn btn-secondary">
+              Ladda användarprofil
+            </button>
+            <div id="profile-content" class="data-display"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Moment4 - Autentiserings-webbplats</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
