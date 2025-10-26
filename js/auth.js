@@ -1,5 +1,5 @@
 //API-konfiguration
-const API_BASE_URL = "https://dt207g-moment4-1-49ck.onrender.com";
+const API_BASE_URL = "https://dt207g-moment4-1-p1ry.onrender.com";
 
 // Autentiseringsklass för hantering av användarautentisering
 class AuthService {
